@@ -13,10 +13,10 @@ const sumStock = (req, res) => {
     // aggregate the qty by product
     d.reduce((re, v) => {
         if (!re[v.nama_produk]) {
-            re[v.nama_produk] = { nama_produk: v.nama_produk, qty: 0 }
+            re[v.nama_produk] = { nama_produk: v.nama_produk, total_stock: 0 }
             r.push(re[v.nama_produk])
         }
-        re[v.nama_produk].qty += v.qty
+        re[v.nama_produk].total_stock += v.qty
         return re
     }, {})
 

@@ -35,5 +35,15 @@ endpoint: /products GET
 endpoint: /product/stock GET
 endpoint: /product/sum-stock GET
 
+### endpoint people
+endpoint: /peoples GET
+
+endpoint: /people GET
+- params: name
+
+endpoint: /people PUT
+- params: old_name, name
+
+
 
 
