@@ -13,6 +13,7 @@ prefix: '/api'
 
 // localhost:9001/api/users
 // users
+### endpoint user
 endpoint: /users GET
     - params: sort, order, page
 
@@ -28,5 +29,11 @@ endpoint: /user/:id PUT
 
 endpoint: /user/:id DELETE
 - params: id
+
+### endpoint product
+endpoint: /products GET
+endpoint: /product/stock GET
+endpoint: /product/sum-stock GET
+
 
 
